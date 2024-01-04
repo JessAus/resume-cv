@@ -7,22 +7,48 @@ output:
       self-contained: false
 ---
 
-# Aside {style="position: absolute; top: 0px; right: 0px;"}
+```{js move_disclaim, echo=FALSE}
+(function() {
+  var pages
+  var timer = 0;
+  var changeDC = setInterval(function() {
+  pages = document.querySelectorAll('.pagedjs_page');
+  if(pages.length !== 2 && timer <= 5000) {
+  timer += 200
+  return;
+}
+if(pages.length !== 2 && timer > 5000) return clearInterval(changeDC);
+var firstPage = pages[0];
+var lastPage = pages[pages.length - 1];
+var aside = firstPage.querySelector('#aside');
+var asideClone = aside.cloneNode();
+asideClone.id = "aside_last";
+var disclaim = document.querySelector('#disclaimer');
+asideClone.appendChild(disclaim);
+lastPage.querySelector('.pagedjs_page_content > div').appendChild(asideClone);
+clearInterval(changeDC);
+}, 200);
+})()
+```
 
-[![Jessie Ausman](./www/headshot.jpg){width="80%"}]{style="position: absolute; top: 0px; left: 50px;"}
+Aside 
+===========================================================================
 
-[*Public Health Informatics Analyst, specializing in the analysis and visualization of public health data, database management and process documentation. Certified in public health and seeking a position in Data Science.*]{style="position: absolute; top: 250px; align: center; left: 50px; font-size: 15px;"}
+![Jessie Ausman](./www/headshot.jpg){width="80%"}
 
-</br> </br> </br> </br> </br> </br> </br> </br> </br></br> </br> </br> </br></br> </br> </br> </br> </br> </br></br></br> </br> </br> 
+*Public Health Informatics Analyst, specializing in the analysis and visualization of public health data, database management and process documentation. Certified in public health and seeking a position in Data Science.*
 
-### Contact Info {#contact}
+
+Contact Info {#contact}
+---------------------------------------------------------------------------
 
 -   <i class="fa fa-envelope"></i> [jessaus1305\@gmail.com](mailto:jessaus1305@gmail.com){.email}
 -   <i class="fa fa-github"></i> [github.com/JessAus](https://github.com/JessAus)
 -   <i class = "fa fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/jessie-ausman-b6a67a237/)
 -   <i class = "fa fa-phone"></i> 817-528-5464
 
-### Skills {#skills}
+Skills {#skills}
+---------------------------------------------------------------------------
 
 -   Advanced R
 -   R Package Development
@@ -33,16 +59,118 @@ output:
 -   Public Health Data Analysis
 -   Science Communication
 
-</br></br> 
+Disclaimer {#disclaimer}
+---------------------------------------------------------------------------
 
-## Disclaimer {#disclaimer}
+This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown).
 
 Last updated on `r Sys.Date()`. 
 
-# Main {style="position: absolute; left: 0px;"}
+Main 
+===========================================================================
 
-## <strong>Jessie Ausman</strong> {#title}
+Jessie Ausman{#title}
+---------------------------------------------------------------------------
 
 ### *Data Analyst, Public Health Professional*
 
-## Education {data-icon="graduation-cap" data-concise="true"}
+Education {data-icon="graduation-cap" data-concise="true"}
+---------------------------------------------------------------------------
+
+### Certified in Public Health (CPH)
+
+Certification awarded to MPH graduates who pass the CPH exam administered by NBPHE
+
+Fort Worth, TX
+
+2022--Present
+
+### University of North Texas Health Science Center (UNTHSC)
+
+Master's of Public Health (Epidemiology Concentration) | Dean's List 
+
+Fort Worth, TX
+
+2020--2022
+
+### University of Texas at Arlington 
+
+Bachelor's of Science, Microbiology | Summa Cum Laude Honors
+
+Arlington, TX
+
+2017--2019
+
+Experience {data-icon=laptop}
+---------------------------------------------------------------------------
+
+### Public Health Informatics Analyst
+
+Tarrant County Public Health Department
+
+Fort Worth, TX (Hybrid)
+
+2023--Present
+
+-   Completed daily public health data analyses and ad hoc requests
+-   Managed Postgres database and designed Shiny application for point-and-click querying for personnel with limited R/SQL experience
+-   Documented daily processes using RMarkdown and Quarto
+-   Visualized & summarized data for executive leadership, internal personnel, and the general public via Power BI, Flexdashboard (R), and Quarto
+
+### Epidemiology Specialist
+
+Tarrant County Public Health Department
+
+Fort Worth, TX
+
+2022--2023
+
+-   Conducted vaccine-preventable and foodborne disease investigations
+-   Trained others on disease investigation processes and data entry/management
+
+### Graduate Research Assistant
+
+UNTHSC, Center for Older Adults
+
+Fort Worth, TX (Hybrid)
+
+2020--2022
+
+-   Acted as IT/Data Entry for zoom-based, Project ECHO programs; National Nursing Home COVID-19 Action Network Project ECHO, Nursing Home STRONG Project ECHO, & Geriatric Project ECHO
+-   Conducted literature reviews and summarized data for HRSA grant proposals
+-   Cleaned, analyzed, and visualized clinical, demographic, and training data and summarized findings to program leadership
+
+### Research Technician
+
+University of Texas at Arlington
+
+Arlington, TX
+
+2019--2020
+
+-   Collected, organized, analyzed and presented scientific findings related to research on antimicrobial resistances
+-   Conducted unsupervised microbial research in infectious microbes
+
+Extracurricular Activities & Honors {data-icon=suitcase}
+---------------------------------------------------------------------------
+
+### School of Public Health Student Ambassador
+
+University of North Texas Health Science Center
+
+Fort Worth, TX
+
+2021-2022
+
+-   Nomination-based student organization
+-   Duties of members include: acting as tour guides, panelists in student preview day events, and mentors to prospective students
+
+### Tarrant County Medical Reserve Corps (MRC)
+
+Tarrant County Public Health Department
+
+Fort Worth, TX
+
+2020
+
+-   Collected and entered patient information into eClinicalWorks system to assist in local COVID-19 response
