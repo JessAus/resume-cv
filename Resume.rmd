@@ -1,0 +1,48 @@
+---
+title: "Jessie D. Ausman"
+author: Jessie D. Ausman
+date: "`r Sys.Date()`"
+output:
+    pagedown::html_resume:
+      self-contained: false
+---
+
+# Aside {style="position: absolute; top: 0px; right: 0px;"}
+
+[![Jessie Ausman](./www/headshot.jpg){width="80%"}]{style="position: absolute; top: 0px; left: 50px;"}
+
+[*Public Health Informatics Analyst, specializing in the analysis and visualization of public health data, database management and process documentation. Certified in public health and seeking a position in Data Science.*]{style="position: absolute; top: 250px; align: center; left: 50px; font-size: 15px;"}
+
+</br> </br> </br> </br> </br> </br> </br> </br> </br></br> </br> </br> </br></br> </br> </br> </br> </br> </br></br></br> </br> </br> 
+
+### Contact Info {#contact}
+
+-   <i class="fa fa-envelope"></i> [jessaus1305\@gmail.com](mailto:jessaus1305@gmail.com){.email}
+-   <i class="fa fa-github"></i> [github.com/JessAus](https://github.com/JessAus)
+-   <i class = "fa fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/jessie-ausman-b6a67a237/)
+-   <i class = "fa fa-phone"></i> 817-528-5464
+
+### Skills {#skills}
+
+-   Advanced R
+-   R Package Development
+-   Quarto / RMarkdown
+-   Shiny App Development
+-   Git / GitHub
+-   SQL / PostgreSQL
+-   Public Health Data Analysis
+-   Science Communication
+
+</br></br> 
+
+## Disclaimer {#disclaimer}
+
+Last updated on `r Sys.Date()`. 
+
+# Main {style="position: absolute; left: 0px;"}
+
+## <strong>Jessie Ausman</strong> {#title}
+
+### *Data Analyst, Public Health Professional*
+
+## Education {data-icon="graduation-cap" data-concise="true"}
