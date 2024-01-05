@@ -5,6 +5,7 @@ date: "`r Sys.Date()`"
 output:
     pagedown::html_resume:
       self-contained: false
+knit: pagedown::chrome_print
 ---
 
 ```{r initial_setup, echo=FALSE, results = 'asis'}
