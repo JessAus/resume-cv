@@ -7,6 +7,15 @@ output:
       self-contained: false
 ---
 
+```{r initial_setup, echo=FALSE, results = 'asis'}
+
+source('helper_functions.R')
+
+skill_data <- data.frame(skill = c("Excel", "R", "SQL", "(Git) Bash", "CSS", "HTML", "JavaScript"), level = c(10, 9, 9, 7, 7, 5, 4))
+
+```
+
+
 ```{js move_disclaim, echo=FALSE}
 (function() {
   var pages
@@ -34,10 +43,9 @@ clearInterval(changeDC);
 Aside 
 ===========================================================================
 
-![Jessie Ausman](./www/headshot.jpg){width="80%"}
+![Jessie Ausman](./www/headshot.png)
 
-*Public Health Informatics Analyst, specializing in the analysis and visualization of public health data, database management and process documentation. Certified in public health and seeking a position in Data Science.*
-
+*Public Health Informatics Analyst, specializing in the analysis and visualization of public health data, database management and process documentation. Seeking a position in Data Science or Data Engineering.*
 
 Contact Info {#contact}
 ---------------------------------------------------------------------------
@@ -50,10 +58,12 @@ Contact Info {#contact}
 Skills {#skills}
 ---------------------------------------------------------------------------
 
--   Advanced R
 -   R Package Development
 -   Quarto / RMarkdown
 -   Shiny App Development
+-   Data Visualization via Tableau/Power BI/R
+-   API Integration 
+-   Script Automation
 -   Git / GitHub
 -   SQL / PostgreSQL
 -   Public Health Data Analysis
@@ -160,10 +170,20 @@ University of North Texas Health Science Center
 
 Fort Worth, TX
 
-2021-2022
+2021--2022
 
 -   Nomination-based student organization
 -   Duties of members include: acting as tour guides, panelists in student preview day events, and mentors to prospective students
+
+### Quality Control Volunteer
+
+Tarrant Area Food Bank
+
+Fort Worth, TX
+
+2019--2022
+
+-   Collaborate in teams to ensure the safety of foods being delivered to Tarrant County residents
 
 ### Tarrant County Medical Reserve Corps (MRC)
 
@@ -174,3 +194,59 @@ Fort Worth, TX
 2020
 
 -   Collected and entered patient information into eClinicalWorks system to assist in local COVID-19 response
+
+Presentations/Publications {data-icon=comment-alt}
+---------------------------------------------------------------------------
+
+### Assessing the Utility of the Project ECHO Platform in Advancing the Knowledge, Skills and Abilities of the Healthcare Workforce to Improve the Health of Older Adults
+
+Research Appreciation Day (RAD) | Presenter
+
+Fort Worth, TX
+
+2022
+
+### Advancing the Knowledge, Skills and Abilities of the Long-term Care Workforce Through the Project ECHO Platform to Improve the Health of Older Adults
+
+Texas Public Health Association (TPHA) | Presenter
+
+Virtual Conference
+
+2022
+
+### Septal Class A Penicillin-Binding Protein Activity and LD-Transpeptidases Mediate Selection of Colistin-Resistant Lipooligosaccharide-Deficient Acinetobacter baumannii
+
+American Society for Microbiology (ASM) | Co-author
+
+Arlington, TX
+
+2021
+
+
+```{css, echo=FALSE}
+.extra-sidebar {
+  top: 0;
+  padding-top: 0;
+}
+
+.extra-sidebar h1 {
+  display: none;
+}
+
+.extra-sidebar .level2:first-of-type {
+  margin-top: 0;
+}
+```
+
+Second page sidebar {.aside .extra-sidebar}
+================================================================================
+
+Language Skills {#moreskills}
+--------------------------------------------------------------------------------
+
+```{r language_skills, echo=FALSE, warning = FALSE, dev.args = list(bg = 'transparent')}
+
+# function from helper_functions.R
+build_skill_bars(skill_data, 'moreskills')
+
+```
