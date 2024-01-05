@@ -5,6 +5,5 @@
 *.Rproj
 .DS_Store
 *.html
-/www
 *.css
 language_skills_chart.R
