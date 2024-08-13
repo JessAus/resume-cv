@@ -5,17 +5,15 @@ date: "`r Sys.Date()`"
 output:
     pagedown::html_resume:
       self-contained: false
-knit: pagedown::chrome_print
 ---
 
 ```{r initial_setup, echo=FALSE, results = 'asis'}
 
 source('helper_functions.R')
 
-skill_data <- data.frame(skill = c("Excel", "R", "SQL", "(Git) Bash", "CSS", "HTML", "JavaScript"), level = c(10, 9, 9, 7, 7, 5, 4))
+skill_data <- data.frame(skill = c("Excel", "R", "SQL", "Power BI", "Tableau", "(Git) Bash", "CSS",  "HTML", "JavaScript", "Python"), level = c(10, 9, 9, 8, 7, 7, 7, 5, 4, 3))
 
 ```
-
 
 ```{js move_disclaim, echo=FALSE}
 (function() {
@@ -41,52 +39,50 @@ clearInterval(changeDC);
 })()
 ```
 
-Aside 
-===========================================================================
+# Aside
 
 ![Jessie Ausman](./www/headshot.png)
 
-*Public Health Informatics Analyst, specializing in the analysis and visualization of public health data, database management and process documentation. Seeking a position in Data Science or Data Engineering.*
+*Public Health Informatics Analyst, specializing in the analysis and visualization of public health data, database management and process documentation. Seeking a position in Data Science, Data Analysis or Data Visualization.*
 
-Contact Info {#contact}
----------------------------------------------------------------------------
+## Contact Info {#contact}
 
 -   <i class="fa fa-envelope"></i> [jessaus1305\@gmail.com](mailto:jessaus1305@gmail.com){.email}
 -   <i class="fa fa-github"></i> [github.com/JessAus](https://github.com/JessAus)
 -   <i class = "fa fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/jessie-ausman-b6a67a237/)
 -   <i class = "fa fa-phone"></i> 817-528-5464
 
-Skills {#skills}
----------------------------------------------------------------------------
+## Skills {#skills}
 
 -   R Package Development
 -   Quarto / RMarkdown
 -   Shiny App Development
--   Data Visualization via Tableau/Power BI/R
--   API Integration 
--   Script Automation
+-   Data Visualization
+-   Data Analysis
+-   Data Security
+-   API Integration
+-   Process Automation
 -   Git / GitHub
--   SQL / PostgreSQL
--   Public Health Data Analysis
--   Science Communication
+-   PostgreSQL
+-   Snowflake
+-   Database Management
+-   Project Management
+-   Communication Skills
+-   Statistics Foundations
 
-Disclaimer {#disclaimer}
----------------------------------------------------------------------------
+## Disclaimer {#disclaimer}
 
 This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown).
 
-Last updated on `r Sys.Date()`. 
+Last updated on `r Sys.Date()`.
 
-Main 
-===========================================================================
+# Main
 
-Jessie Ausman{#title}
----------------------------------------------------------------------------
+## Jessie Ausman {#title}
 
 ### *Data Analyst, Public Health Professional*
 
-Education {data-icon="graduation-cap" data-concise="true"}
----------------------------------------------------------------------------
+## Education {data-icon="graduation-cap" data-concise="true"}
 
 ### Certified in Public Health (CPH)
 
@@ -98,22 +94,21 @@ Fort Worth, TX
 
 ### University of North Texas Health Science Center (UNTHSC)
 
-Master's of Public Health (Epidemiology Concentration) | Dean's List 
+Master's of Public Health (Epidemiology Concentration) \| Dean's List
 
 Fort Worth, TX
 
 2020--2022
 
-### University of Texas at Arlington 
+### University of Texas at Arlington
 
-Bachelor's of Science, Microbiology | Summa Cum Laude Honors
+Bachelor's of Science, Microbiology \| Summa Cum Laude Honors
 
 Arlington, TX
 
 2017--2019
 
-Experience {data-icon=laptop}
----------------------------------------------------------------------------
+## Experience {data-icon="laptop"}
 
 ### Public Health Informatics Analyst
 
@@ -123,10 +118,13 @@ Fort Worth, TX (Hybrid)
 
 2023--Present
 
--   Completed daily public health data analyses and ad hoc requests
+-   Completed daily public health data analyses and ad hoc data requests
 -   Managed Postgres database and designed Shiny application for point-and-click querying for personnel with limited R/SQL experience
 -   Documented daily processes using RMarkdown and Quarto
--   Visualized & summarized data for executive leadership, internal personnel, and the general public via Power BI, Flexdashboard (R), and Quarto
+-   Performed record linkage for large data (1.5 million observations)
+-   Trained others in R (visualization and analysis)
+-   Presented analytical findings to executive leadership, members of the public and internal personnel
+-   Visualized & summarized data using Power BI, Flexdashboard (R), and Quarto (R)
 
 ### Epidemiology Specialist
 
@@ -138,6 +136,7 @@ Fort Worth, TX
 
 -   Conducted vaccine-preventable and foodborne disease investigations
 -   Trained others on disease investigation processes and data entry/management
+-   Performed basic analyses of case data using R and excel
 
 ### Graduate Research Assistant
 
@@ -148,8 +147,8 @@ Fort Worth, TX (Hybrid)
 2020--2022
 
 -   Acted as IT/Data Entry for zoom-based, Project ECHO programs; National Nursing Home COVID-19 Action Network Project ECHO, Nursing Home STRONG Project ECHO, & Geriatric Project ECHO
--   Conducted literature reviews and summarized data for HRSA grant proposals
--   Cleaned, analyzed, and visualized clinical, demographic, and training data and summarized findings to program leadership
+-   Conducted literature reviews and summarized data for HRSA grant proposals using SAS
+-   Cleaned, analyzed, and visualized clinical, demographic, and training data and summarized findings to program leadership using SAS and Tableau
 
 ### Research Technician
 
@@ -160,10 +159,10 @@ Arlington, TX
 2019--2020
 
 -   Collected, organized, analyzed and presented scientific findings related to research on antimicrobial resistances
--   Conducted unsupervised microbial research in infectious microbes
+-   Conducted research in infectious microbes
+-   Analyzed research data for publication
 
-Extracurricular Activities & Honors {data-icon=suitcase}
----------------------------------------------------------------------------
+## Extracurricular Activities & Honors {data-icon="suitcase"}
 
 ### School of Public Health Student Ambassador
 
@@ -194,14 +193,13 @@ Fort Worth, TX
 
 2020
 
--   Collected and entered patient information into eClinicalWorks system to assist in local COVID-19 response
+-   Collected and entered patient information into eClinicalWorks (eCW) system to assist in local COVID-19 response during the pandemic
 
-Presentations/Publications {data-icon=comment-alt}
----------------------------------------------------------------------------
+## Presentations/Publications {data-icon="comment-alt"}
 
 ### Assessing the Utility of the Project ECHO Platform in Advancing the Knowledge, Skills and Abilities of the Healthcare Workforce to Improve the Health of Older Adults
 
-Research Appreciation Day (RAD) | Presenter
+Research Appreciation Day (RAD) \| Presenter
 
 Fort Worth, TX
 
@@ -209,20 +207,17 @@ Fort Worth, TX
 
 ### Advancing the Knowledge, Skills and Abilities of the Long-term Care Workforce Through the Project ECHO Platform to Improve the Health of Older Adults
 
-Texas Public Health Association (TPHA) | Presenter
-
-Virtual Conference
+Texas Public Health Association (TPHA) \| Presenter
 
 2022
 
 ### Septal Class A Penicillin-Binding Protein Activity and LD-Transpeptidases Mediate Selection of Colistin-Resistant Lipooligosaccharide-Deficient Acinetobacter baumannii
 
-American Society for Microbiology (ASM) | Co-author
+American Society for Microbiology (ASM) \| Co-author
 
 Arlington, TX
 
 2021
-
 
 ```{css, echo=FALSE}
 .extra-sidebar {
@@ -239,11 +234,9 @@ Arlington, TX
 }
 ```
 
-Second page sidebar {.aside .extra-sidebar}
-================================================================================
+# Second page sidebar {.aside .extra-sidebar}
 
-Language Skills {#moreskills}
---------------------------------------------------------------------------------
+## Language Skills {#moreskills}
 
 ```{r language_skills, echo=FALSE, warning = FALSE, dev.args = list(bg = 'transparent')}
 

@@ -17,3 +17,4 @@ build_skill_bars <- function(skill_data, section_title) {
     theme(panel.background = element_rect(fill = "transparent", color = NA),
           plot.background = element_rect(fill = "transparent", color = NA))
 }
+
